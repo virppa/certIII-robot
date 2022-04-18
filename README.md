@@ -1,13 +1,9 @@
-# Template: Standard Robot Framework
-
-Want to get started using [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) this is the simplest template to start from.
-
-This template robot:
-
-- Uses [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) syntax.
-- Includes all the necessary dependencies and initialization commands (`conda.yaml`).
-- Provides a simple task template to start from (`tasks.robot`).
+# Robocorp Certificate level III robot
+This robot is split into producer and consumer processes:
+- Producer fetches, filters and sorts raw .CSV to separate work items.
+- Consumer handles work item data validation, POST requests and exception handling.
+  - Failed work items are separated from the succesfull ones
+  - Can be manually retried 
 
 ## Learning materials
-
-- [All docs related to Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
+https://robocorp.com/docs/courses/work-data-management
